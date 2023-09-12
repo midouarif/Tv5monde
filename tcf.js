@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (!isNaN(tv5mondeScore)) {
             const note = (tv5mondeScore * 699) / 100;
             const niveau = classificationNiveau(note);
-            resultElement.textContent = `Your level for ${tv5mondeScore}% is ${niveau}`;
+            resultElement.textContent = `You have ${note} points \n Your level for ${tv5mondeScore}% is ${niveau}`;
         } else {
             resultElement.textContent = "Please enter a valid score.";
         }

@@ -6,9 +6,9 @@ document.addEventListener("DOMContentLoaded", function () {
     calculateBtn.addEventListener("click", function () {
         const tv5mondeScore = parseFloat(tv5mondeScoreInput.value);
         if (!isNaN(tv5mondeScore)) {
-            const note = (tv5mondeScore * 699) / 100;
+            const note = (tv5mondeScore * 699) / 80;
             const niveau = classificationNiveau(note);
-            resultElement.textContent = `You have ${note} points \n Your level for ${tv5mondeScore}% is ${niveau}`;
+            resultElement.textContent = `You have ${note} points Your level is ${niveau}`;
         } else {
             resultElement.textContent = "Please enter a valid score.";
         }
